@@ -1,0 +1,44 @@
+/* Footer.css */
+.footer-container {
+    background-color: #001F3F;
+    color: #F5F5DC;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 0 10px;
+  }
+  
+  .footer-content a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-content a:hover {
+    color: #ccc;
+  }
+  
+  .fa-linkedin {
+    font-size: 24px;
+    margin-left: 5px;
+  }
+  
+  /* Add these styles for positioning the footer at the bottom */
+  .about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 1;
+  }
+  

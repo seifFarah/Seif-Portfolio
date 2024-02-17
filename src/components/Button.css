@@ -1,0 +1,33 @@
+/* Button.css */
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin-right: 10px; /* Add margin between buttons */
+}
+
+.button:last-child {
+  margin-right: 0; /* Remove margin for the last button */
+}
+
+.button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: #ffffff;
+}
+
+.button:active {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: #ffffff;
+}
