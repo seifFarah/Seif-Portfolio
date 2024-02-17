@@ -9,8 +9,9 @@ const Footer = () => {
         <p>© 2024 Seifeldin Farah</p>
         <p>Made in React</p>
         <a href="https://www.linkedin.com/in/seifeldin-farah" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin"></i>
+        <img src="/linkedin.png" alt="LinkedIn" className='linkedin-icon'></img>
         </a>
+
       </div>
     </footer>
   );
