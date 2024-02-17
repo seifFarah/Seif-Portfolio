@@ -12,7 +12,7 @@ const Project = () => {
           <div className="card-content">
             <h2>Design Member</h2>
             <p>Biztech Society</p>
-            <p>Joining the executive team with a for digital content creation to promote the club's vision to create a
+            <p>I joined the executive team with a drive to create digital content to promote the club's vision to create a
 safe space for students interested in the intersection of business and technology.</p>
           </div>
         </div>
