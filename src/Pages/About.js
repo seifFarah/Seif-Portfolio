@@ -49,6 +49,16 @@ const About = () => {
             </section>
           </Col>
         </Row>
+        <Row>
+          <Col>
+            <section id="section3" className="section">
+              <h2>Get in contact</h2>
+              <p>
+                Feel free to reach out through my email seiffarah97@gmail.com for any concerns or inquires.
+              </p>
+            </section>
+          </Col>
+        </Row>
       </Container> 
       <Footer />
     </div>
