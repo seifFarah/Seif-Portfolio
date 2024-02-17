@@ -60,7 +60,7 @@ body {
 @media (max-width: 767px) {
   /* For devices with a viewport width smaller than 768px (mobile) */
   .about {
-    margin-top: 60%; /* Adjust the margin-top value as needed */
+    margin-top: 80%; /* Adjust the margin-top value as needed */
   }
 }
 
