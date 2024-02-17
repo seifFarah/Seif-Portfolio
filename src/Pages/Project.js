@@ -26,7 +26,7 @@ safe space for students interested in the intersection of business and technolog
         <div className="card">
           <div className="card-content">
             <h2>EY Ideate and Innovate Challenge</h2>
-            <p>EY Head Offfice</p>
+            <p>EY Head Office</p>
             <p>Worked on a two-day technical competition where I was randomly allocated into a group of four university students to
 create a technical solution to solve the issue of lack of engagement with university events.</p>
           </div>
