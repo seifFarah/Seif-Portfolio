@@ -32,7 +32,7 @@ const Experience = () => {
           <h3>SomTam Labs</h3>
           <h4>November 2023 - January 2024</h4>
           <p>
-            As a project manager intern, I worked across multiple projects including project management system migration, website design and testing. Additionally, I worked with senior managers to manage project cost and tracking. During my tenure as a Project Manager Intern, I actively contributed to a diverse array of projects spanning project management system migration, website design, and testing.
+            As a project manager intern, I worked across multiple projects including project management system migration, website design and testing. Additionally, I worked with senior managers to manage project cost and tracking. I actively collaborated closely with senior project managers to handle a diverse range of projects and tasks while maintaing professional relations with stakeholders.
           </p>
         </div>
       </section>
