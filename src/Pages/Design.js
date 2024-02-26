@@ -25,6 +25,13 @@ const Design = () => {
           <img src="/parfum.png" alt="Parfum UI" />
           <p>Parfum UI</p>
         </div>
+        <div className="design-item">
+          <img src="/launch.png" alt="Launch Event" />
+          <p>Biztech Launch Event</p>
+        </div>  <div className="design-item">
+          <img src="/fly.png" alt="Club Expo" />
+          <p>Biztech Club Expo Flyers</p>
+        </div>
         
       </div>
     </div>
