@@ -1,80 +1,267 @@
-
-/* About.css */
+/* Add this to your existing CSS */
 body {
-  margin: 0; 
-  background-color: black;/* Remove default margin */
-}
-/* About.css */
-/* About.css */
-
-.plane img {
-  width: 100px; /* Set the width of the plane image */
-  height: auto; /* Maintain aspect ratio */
-  position: relative; /* Ensure the position is relative for animation */
-  animation-name: planeAnimation; /* Set the name of the animation */
-  animation-duration: 4s; /* Set the duration of the animation */
-  animation-timing-function: linear; /* Set the timing function of the animation */
-  animation-iteration-count: infinite; /* Make the animation repeat infinitely */
+  background-color: black;
+  color: #F5F5DC;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
-.plane {
-  top: 50px; /* Set the initial top position */
-  left: -100px; /* Set the initial left position */
+
+
+
+.section-one,  .section-two, .section-three, .section-projects {
+  display: flex;
+  height: auto; /* instead of 100vh */
+  min-height: 100vh;
+  margin-top: 5%;
+  margin-left: 3%;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  animation: fadeIn 1.5s ease forwards;
 }
 
-@keyframes planeAnimation {
+.content {
+  padding: 0 20px;
+}
+
+.section-two, .section-three {
+  padding: 20px;
+  text-align: left;
+}
+
+.my-name, .my-exp{
+  font-weight: 300;
+  font-size: 80px;
+}
+
+.my-exp {
+  font-size: 80px;
+  font-weight:700;
+  text-align: left;
+
+}
+
+.fields {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.passion-text {
+  font-size: 20px;
+}
+
+
+
+@keyframes fadeIn {
   from {
-    left: -100px; /* Set the starting position of the animation */
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    left: calc(100vw + 100px); /* Set the ending position of the animation */
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.profile-image {
-  border-radius: 50%; /* Make the image circular */
-  width: 150px; /* Set the width of the image */
-  height: 150px; /* Set the height of the image */
-  object-fit: cover; /* Scale the image to be as large as possible while maintaining aspect ratio and cropping any excess */
+
+.highlight {
+  font-weight:700;
+ } /* Rounded corners for the highlight */
+
+ .job {
+  position: relative;
+  margin: 50px 0; }
+
+.job-title {
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-/* About.css */
+.job-period {
+  font-size: 20px;
+  color: #F5F5DC;
+  margin-bottom: 10px;
+}
 
-.about {
+
+
+.timeline {
+  position: relative;
+  padding-left: 50px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: #F5F5DC;
+  transform: translateX(-50%);
+}
+/* Add this to your existing CSS */
+.section-follow {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh;
-  color: white;
-  background-color: black;
+  margin: 5%;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  padding: 20px;
 }
 
-/* Adjust margin-top based on viewport size */
-@media (min-width: 768px) {
-  /* For devices with a viewport width of 768px or larger (tablet and desktop) */
-  .about {
-    margin-top: 15%;
-  }
+.follow-content {
+  display: flex;
+  justify-content: space-around; /* Evenly spaces the child elements */
+  width: 100%; /* Full width of the section */
+  max-width: 1200px; /* Maximum width of the content */
 }
 
-@media (max-width: 767px) {
-  /* For devices with a viewport width smaller than 768px (mobile) */
-  .about {
-    margin-top: 80%; /* Adjust the margin-top value as needed */
-  }
+.life-exp, .work-exp {
+  flex: 1; /* Each section takes equal space */
+  padding: 20px;
+  margin: 10px;
+  border-right: 2px solid #F5F5DC; /* Right border for separation */
+}
+
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
 }
 
 
-.section {
-  padding: 50px 0;
-  text-align: center; /* Center the text within each section */
+.into-project {
+  color: #F5F5DC;
+  font-weight: 300;
+  font-size: 80px;
 }
 
+.project {
+  transition: transform 0.3s ease-in-out;
+  width: 90%; /* Adjust width based on your layout needs */
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for the cards */
+  opacity: 0.9;
+}
 
-.section-content {
+.project:hover {
+  transform: translateY(-10px);
+}
+
+a {
+  color:#F5F5DC;
+}
+.project-title {
+  color: #F5F5DC;
+  font-size: 24px;
   text-align: center;
 }
 
-.scroll-arrows {
-  display: none; /* Hide scroll arrows for the new layout */
+.project-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #F5F5DC;
+  text-align: center;
+}
+
+/* Animation for fading in projects */
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.project-content {
+  animation: slideInUp 0.5s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+
+@media screen and (max-width: 768px) {
+  .section-one {
+    margin: 5%; /* Center align content vertically */
+  }
+
+  hr {
+    display: none;
+  }
+
+
+  .content,
+  .section-two,
+  .section-three {
+    text-align: center;
+    padding: 0;
+  }
+
+  .my-name{
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .into-project {
+    color: #F5F5DC;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+  }
+  .my-exp {
+    font-size: 40px; /* Adjust font size for smaller screens */
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .fields {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+
+  .highlight{
+    font-weight: 700;
+   } /* Rounded corners for the highlight */
+  /* Rounded corners for the highlight */
+  
+
+  .passion-text {
+    font-size: 15px; /* Adjust font size for smaller screens */
+  }
+
+  .hobby i {
+    font-size: 24px;
+  }
+
+  .hobby span {
+    font-size: 14px;
+  }
+
+  .job {
+    margin: 30px 0;
+  }
+
+  .job-title {
+    font-size: 20px;
+  }
+
+  .job-period {
+    font-size: 16px;
+  }
+
+  .job-description {
+    font-size: 14px;
+  }
+
+  .timeline {
+    padding-left: 0; /* Removes padding that was making space for the vertical line */
+  }
+
+  .timeline::before {
+    display: none; /* Removes the vertical line completely */
+  }
 }
