@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './About.css';
 import Footer from '../components/Footer';
 
@@ -110,7 +110,7 @@ const About = () => {
           </div>
         </div>
       </div> 
-
+    <Footer/>
     </div>
   );
 };
