@@ -1,11 +1,14 @@
 import React from 'react';
 import './About.css';
 import Footer from '../components/Footer';
+import Navbar from '../components/navigation';
 
 
 const About = () => {
   return (
     <div>
+      <Navbar />
+      <div className="about">
       <div className="section-one">
         <div className="content">
           <h1 className="my-name">Hello, I'm <span className='highlight'>Seif (he/him)</span>👋-</h1>
@@ -37,11 +40,11 @@ const About = () => {
         <h1 className='into-project'>Things I have been <span className='highlight'>working</span> on</h1>
         <div className="project-content">
           <div className="project">
-            <h1 className="project-title"><a href="https://public.tableau.com/app/profile/seifeldin.farah4338">Spotify data - Tableau Public</a></h1>
-            <p className="project-text">As I mentioned, data visulisation is one of my main interests! I like to pull random datasets and see what I can find from cleaning and analyzing these datasets. You'll find a couple of visualisations on my Tableau account. One of which were I extracted my Spotify data to see which artists I listened to the most.</p>
+            <h1 className="project-title"><a href="https://public.tableau.com/app/profile/seifeldinfarah">Data Visualisations Tableau Public</a></h1>
+            <p className="project-text">As I mentioned, story-telling through data is one of my biggest interests! I like to pull random datasets and see what I can find from cleaning and analyzing these datasets. You'll find a couple of visualisations on my Tableau account. One of which were I extracted my Spotify data to see which artists I listened to the most.</p>
           </div>
           <div className="project">
-            <h1 className="project-title"><a href="https://www.figma.com/file/qtjunmWFfPQqQ4NMPAJ6p9/Artist-Store?type=design&node-id=0%3A1&mode=design&t=NfoChDxyF8hl3zSL-1">Online Store and artist website - Figma</a></h1>
+            <h1 className="project-title"><a href="/beyonce-store">Online Store and artist website - Figma</a></h1>
             <p className="project-text">I wanted to reinvent one of my favorite artists' online merch store as well as design a theme for their website. I got to practice so much about Figma and really develop my interest in this software. Also here is a sneak peak of some projects I am currently working on in Figma: A music version of Letterboxd and a concert tracking mobile app.</p>
           </div>
 
@@ -111,6 +114,7 @@ const About = () => {
         </div>
       </div> 
     <Footer/>
+    </div>
     </div>
   );
 };

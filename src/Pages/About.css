@@ -1,8 +1,13 @@
 /* Add this to your existing CSS */
 body {
-  background-color: black;
   color: #F5F5DC;
+  background-color: black;
   scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+
+.about {
+  background-color: black;
 }
 
 
