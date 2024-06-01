@@ -30,22 +30,22 @@ const About = () => {
             <h1 className="exp-title">At Work</h1>
             <p className="exp-text">During university, I got to explore a wide array of topics in the technology field.</p> <br></br>
             <p className="exp-text">The main topic that I found myself invested in is UI/UX design. I enjoy working on web designs and exploring different design options that could improve the user experience.</p> <br></br>
-            <p className="exp-text">I find Data Visualisation and the power to inform story telling an extremely valuable and exciting topic. Something I am intersted on developing in the future.</p>
+            <p className="exp-text">I am intersted in the intersection of UX design and Data. I find the power to inform storytelling an extremely valuable and exciting premise. Something I am intersted on developing in the future.</p>
 
           </div>
         </div>
       </div>
 
       <div className="section-projects">
-        <h1 className='into-project'>Things I have been <span className='highlight'>working</span> on</h1>
+        <h1 className='into-project'>Things I Have Been <span className='highlight'>Working</span> On</h1>
         <div className="project-content">
           <div className="project">
             <h1 className="project-title"><a href="https://public.tableau.com/app/profile/seifeldinfarah">Data Visualisations Tableau Public</a></h1>
-            <p className="project-text">As I mentioned, story-telling through data is one of my biggest interests! I like to pull random datasets and see what I can find from cleaning and analyzing these datasets. You'll find a couple of visualisations on my Tableau account. One of which were I extracted my Spotify data to see which artists I listened to the most.</p>
+            <p className="project-text"> Story-telling through data is one of my biggest interests. I enjoy cleaning and analyzing random datasets to uncover insights. Check out my Tableau account for some visualizations, including an analysis of my Spotify listening habits.</p>
           </div>
           <div className="project">
             <h1 className="project-title"><a href="/beyonce-store">Online Store and artist website - Figma</a></h1>
-            <p className="project-text">I wanted to reinvent one of my favorite artists' online merch store as well as design a theme for their website. I got to practice so much about Figma and really develop my interest in this software. Also here is a sneak peak of some projects I am currently working on in Figma: A music version of Letterboxd and a concert tracking mobile app.</p>
+            <p className="project-text"> I redesigned one of my favorite artist's online merch store and website theme, honing my Figma skills.</p>
           </div>
 
           <div className="project">
@@ -55,7 +55,8 @@ const About = () => {
 
           <div className="project">
             <h1 className="project-title"><a href="https://drive.google.com/drive/folders/1vCpVw0VaXOiePYBJMduzk9RCg_fEI7Dw?usp=drive_link">Social Media Designs</a></h1>
-            <p className="project-text">Content creation and graphic designs is one of my personal hobbies. During my time in high school, I got to experiment with social media design as a part of business studies class. Now I am a member of Biztech Society as a design team member, creating graphic designs to attract members of the university interested in the intersection between business and technology.</p>
+            <p className="project-text"> Creating content and graphic designs is a personal hobby. I experimented with social media design in high school and now contribute to the Biztech Society, creating graphics to attract students interested in the intersection of business and technology.
+              </p>
           </div>
         </div>
       </div>
