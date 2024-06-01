@@ -55,7 +55,9 @@ body {
   font-size: 20px;
 }
 
-
+.exp-text {
+  font-size: 20px;
+}
 
 @keyframes fadeIn {
   from {
