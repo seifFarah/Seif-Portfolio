@@ -143,6 +143,10 @@ body {
   font-size: 80px;
 }
 
+.links {
+  color: #F5F5DC;
+}
+
 .project {
   transition: transform 0.3s ease-in-out;
   width: 90%; /* Adjust width based on your layout needs */
@@ -171,6 +175,30 @@ a {
   color: #F5F5DC;
   text-align: center;
 }
+
+.design-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Space between images */
+  justify-content: center; /* Center the images */
+  margin-top: 16px; /* Space above the gallery */
+}
+
+.design-image {
+  width: 100%; /* Adjust this value as needed */
+  max-width: 300px; /* Limit the max width */
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.design-image:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+
 
 /* Animation for fading in projects */
 @keyframes slideInUp {

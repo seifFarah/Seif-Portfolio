@@ -5,6 +5,8 @@ import Navbar from '../components/navigation';
 
 
 const About = () => {
+  const designs = ['insights.png', 'intern.png', 'launch.png', 'quiz.png'];
+
   return (
     <div>
       <Navbar />
@@ -40,23 +42,28 @@ const About = () => {
         <h1 className='into-project'>Things I Have Been <span className='highlight'>Working</span> On</h1>
         <div className="project-content">
           <div className="project">
-            <h1 className="project-title"><a href="https://public.tableau.com/app/profile/seifeldinfarah">Data Visualisations Tableau Public</a></h1>
+            <h1 className="project-title"><a href="https://public.tableau.com/app/profile/seifeldinfarah" className="links">Data Visualisations Tableau Public</a></h1>
             <p className="project-text"> Story-telling through data is one of my biggest interests. I enjoy cleaning and analyzing random datasets to uncover insights. Check out my Tableau account for some visualizations, including an analysis of my Spotify listening habits.</p>
           </div>
           <div className="project">
-            <h1 className="project-title"><a href="/beyonce-store">Online Store and artist website - Figma</a></h1>
+            <h1 className="project-title"><a href="https://www.figma.com/design/qtjunmWFfPQqQ4NMPAJ6p9/Artist-Store?node-id=0-1&t=SXKwsGyqhkidExiU-1"  className="links">Online Store and artist website - Figma</a></h1>
             <p className="project-text"> I redesigned one of my favorite artist's online merch store and website theme, honing my Figma skills.</p>
           </div>
 
           <div className="project">
-            <h1 className="project-title"><a href="https://www.treasurenz.com">Treasure New Zealand - PERN Stack</a></h1>
-            <p className="project-text">This is a website that is currently in development. We hope to launch it sometime between late 2024 - early 2025. Working with another developer, we are using the PERN stack do develop a really exciting application.</p>
+            <h1 className="project-title"><a href="https://www.treasurenz.com"  className="links">Treasure New Zealand - PERN Stack</a></h1>
+            <p className="project-text">This is a website that is currently in development. We hope to launch it sometime between late 2024 - early 2025. Working with another developer, we are using the PERN stack to develop a really exciting application that will streamline financial tracking for university clubs.</p>
           </div>
 
           <div className="project">
-            <h1 className="project-title"><a href="https://drive.google.com/drive/folders/1vCpVw0VaXOiePYBJMduzk9RCg_fEI7Dw?usp=drive_link">Social Media Designs</a></h1>
+            <h1 className="project-title">Social Media Designs</h1>
             <p className="project-text"> Creating content and graphic designs is a personal hobby. I experimented with social media design in high school and now contribute to the Biztech Society, creating graphics to attract students interested in the intersection of business and technology.
-              </p>
+              </p><br></br>
+              <div className="design-gallery">
+                {designs.map((design, index) => (
+                  <img key={index} src={`${process.env.PUBLIC_URL}/${design}`} alt={`Design ${index + 1}`} className="design-image"/>
+                ))}
+              </div>
           </div>
         </div>
       </div>
