@@ -15,7 +15,7 @@ const About = () => {
         <div className="content">
           <h1 className="my-name">Hello, I'm <span className='highlight'>Seif (he/him)</span>👋-</h1>
           <h2 className="fields">IT graduate based in Auckland, New Zealand</h2>
-          <p className="passion-text">I came all the way from Egypt back in 2020, currently seeking professional growth through learning in the tech industry. I look forward to a career in UI/UX design with interest in the fields of data and software development. At heart, I am passionate about problem-solving and driving results through innovative solutions. As I transition into the workforce, I look forward to combine all the skills I learned across previous roles and experiences to build new skills and grow professionally.</p>
+          <p className="passion-text">My goal is to merge creativity and data-driven insights to craft impactful user experiences and drive innovative tech solutions.</p>
          <br></br>
         </div>
       </div>
